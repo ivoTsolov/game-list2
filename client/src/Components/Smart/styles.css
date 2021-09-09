@@ -1,0 +1,119 @@
+body {
+    color: #555;
+}
+
+.primary-color, .active-color { 
+    color: #42add1;
+}
+@media only screen and (max-width: 768px) { 
+
+    h3 {
+        text-align: center;
+    }
+}
+.filterList, .menu-items {
+
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    direction: none;
+    list-style-type: none;
+    vertical-align: baseline;
+    
+}
+.filterList div {
+    display:  inline-block;
+    justify-content: space-around;
+
+}
+
+
+
+.active {
+    color: #42add1;
+}
+.inactive {
+    color: #555;;
+}
+
+ 
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    max-width: 1800px;
+    margin: auto;
+    
+}
+
+/*.grid.firstRow {
+    border: 1px solid #42add1;
+} */
+
+.block {
+    background: teal;
+    aspect-ratio: 1 / 1; /*experimental but why not*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+  
+  .block.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+ 
+.block img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.menu-items {
+    display: flex;
+    white-space: nowrap;
+}
+.menu-items > *{
+    display: block !important;
+}
+.menu-items {
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-items:hover {
+    color: #42add1;
+}
+ 
+
+ .box {
+  
+    width: 100%; height: 100%;
+     background-color: white;
+     border: 1px solid #555;
+     border-radius: 30px;
+     justify-content: flex-end;
+     display: flex;
+     padding: 7px;
+     
+ 
+ }
+
+ .box > input,  .box > input:active {
+     border: none;
+     outline: none;
+     flex: 1;
+ }
+ .box > input {
+     padding: 0px;
+ }
+
+ .box > i{
+    font-size: 20px;
+    /*if i could find solid - none premium icon i would go for this with relative / absolute, this can be improved */
+ }
+
+ 
